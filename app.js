@@ -16,7 +16,7 @@ var commentRoutes    = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
     indexRoutes       = require("./routes/index");
 
-mongoose.connect("mongodb://localhost/yelpcamp",{useUnifiedTopology: true,useNewUrlParser: true});
+mongoose.connect("mongodb+srv://m2406:whJaqTam7AwRUut@cluster0.9gkt2.mongodb.net/yelpcamp",{useUnifiedTopology: true,useNewUrlParser: true});
 app.use(bodyParser.urlencoded({extended : true}));
 app.set("view engine","ejs");      // So that we don't have to write ejs multiple times.
 app.use(express.static(__dirname + "/public"));
