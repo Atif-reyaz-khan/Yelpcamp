@@ -52,7 +52,7 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-
-app.listen(4000, function() { 
+const port =process.env.PORT || 4000;
+app.listen(port, function() { 
     console.log('Yelpcamp Server Has Started...'); 
   }); 
